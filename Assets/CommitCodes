@@ -1,0 +1,19 @@
+2^0 : attribute value corrections, name corrections, no component addition or removal, no logic changes. | +1
+2^1 : CS file content changes | +2 
+2^2 : GameObject structure changes; content, attribute additions or removal | +4
+2^3 : CS file added or removed | +8 
+2^4 : GameObject added or removed | +16
+2^5 : Changes in assets that are not related to pervious actions | +32
+2^6 : Folder adding or removing | +64
+2^7 :
+2^8 :
+2^9 :
+2^10 :
+
+commit format:
+" code_(sum of points) : (description) " || " codeNum_(number of actions in order) : description "
+
+
+
+branch format: 
+" B(sum of points)_description
