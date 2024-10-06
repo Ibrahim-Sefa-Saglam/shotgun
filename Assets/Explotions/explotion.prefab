@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionRadius: 3
-  explosionForce: 9
+  explosionForce: 2
   rayCount: 360
   layerMask:
     serializedVersion: 2
