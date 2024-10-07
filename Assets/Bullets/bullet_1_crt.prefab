@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 506830368418170413}
   explotionPrefab: {fileID: 9060520846712744143, guid: 6281494c703e45445865354d5e0816f0, type: 3}
+  lifetime: 10
 --- !u!50 &506830368418170413 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3194806898028119717, guid: 74848b3709aed1949ab4a3c64e37a93f, type: 3}

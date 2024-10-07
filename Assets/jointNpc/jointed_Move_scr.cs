@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class jointed_npc_scr : MonoBehaviour
+public class jointed_move_scr : MonoBehaviour
 {
     public float moveSpeed = 5f;          // Speed of left/right movement
     public float jumpForce = 7f;          // Force of the jump
@@ -16,23 +16,20 @@ public class jointed_npc_scr : MonoBehaviour
 
     private void Update()
     {
-        Move();
-        Jump();
+        Movement();  // Handle movement and jump together
     }
 
-    void Move()
+    void Movement()
     {
-        float moveDirection = Input.GetAxis("Horizontal");  // A/D or Left/Right arrow keys
-        rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);  // Move player horizontally
-    }
+        // Handle horizontal movement with A/D or Left/Right arrow keys
+        float moveDirection = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveDirection * moveSpeed, rb.velocity.y);
 
-    void Jump()
-    {
         // Cast a ray downwards to check if the player is grounded
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer);
 
-        // Jump if W is pressed and the player is grounded
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        // Handle jumping with W or Space key if the player is grounded
+        if (isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }

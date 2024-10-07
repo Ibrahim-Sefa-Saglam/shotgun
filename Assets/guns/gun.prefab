@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 254032621542418161}
   - component: {fileID: 8788203610828691917}
   - component: {fileID: 8215775359605616310}
-  - component: {fileID: 3074599442366817946}
   - component: {fileID: 7205918131346201647}
+  - component: {fileID: 2875087554897673047}
   m_Layer: 8
   m_Name: gun
   m_TagString: gun
@@ -59,8 +59,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4256260108640811188}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.19, y: -3.29, z: -0.027438462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.48302, y: -4.8547626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -146,8 +146,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &3074599442366817946
-EdgeCollider2D:
+--- !u!114 &7205918131346201647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4256260108640811188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98117d5964e4b742a881a45e3335878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1016212295776556066, guid: e0332e36f626df44f917c3c3c1fe216d, type: 3}
+  bullet_point: {fileID: 1329899314477633653}
+  bulletSpeed: 10
+  bulletCount: 7
+  maxSpreadAngle: 15
+--- !u!60 &2875087554897673047
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -179,36 +196,29 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.7, y: 0.93333334}
+    newSize: {x: 2.7, y: 0.93333334}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: -1.35, y: 0}
-  - {x: -1.3594308, y: 0.5095844}
-  - {x: 0.7405946, y: 0.5077617}
-  - {x: 1.3690158, y: -0.1147666}
-  - {x: 1.3728161, y: -0.48437762}
-  - {x: 1.0727537, y: -0.48961115}
-  - {x: 0.86015797, y: -0.27026916}
-  - {x: 0.3859694, y: -0.26494026}
-  - {x: 0.09946108, y: 0.005034685}
-  - {x: -1.3455576, y: 0.004762411}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!114 &7205918131346201647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4256260108640811188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c98117d5964e4b742a881a45e3335878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1016212295776556066, guid: e0332e36f626df44f917c3c3c1fe216d, type: 3}
-  bullet_point: {fileID: 1329899314477633653}
-  bulletSpeed: 10
-  bulletCount: 7
-  maxSpreadAngle: 15
+    m_Paths:
+    - - {x: -1.35, y: 0.4666667}
+      - {x: -1.35, y: 0}
+      - {x: -1.3166667, y: -0.033333335}
+      - {x: 0.10123685, y: -0.02949816}
+      - {x: 0.38861033, y: -0.28298387}
+      - {x: 0.81847024, y: -0.29250398}
+      - {x: 1.0764794, y: -0.47302473}
+      - {x: 1.35, y: -0.4666667}
+      - {x: 1.35, y: 0.033333335}
+      - {x: 0.85, y: 0.4666667}
+    - - {x: 0.38333336, y: -0.033333335}
+      - {x: 0.45000002, y: -0.033333335}
+      - {x: 0.4166667, y: -0.06666667}
+      - {x: 0.4166667, y: -0.033333335}
+  m_UseDelaunayMesh: 0
