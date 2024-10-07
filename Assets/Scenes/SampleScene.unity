@@ -368,11 +368,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9144190746983301865, guid: 88a9df679999fe54587d320073622d03, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.16
+      value: -36.46
       objectReference: {fileID: 0}
     - target: {fileID: 9144190746983301865, guid: 88a9df679999fe54587d320073622d03, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.27
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 9144190746983301865, guid: 88a9df679999fe54587d320073622d03, type: 3}
       propertyPath: m_LocalPosition.z
@@ -740,8 +740,8 @@ GameObject:
   - component: {fileID: 835233409}
   - component: {fileID: 835233408}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: Untagged
+  m_Name: MainCamera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1829,12 +1829,20 @@ PrefabInstance:
       value: jointed
       objectReference: {fileID: 0}
     - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_ConnectedAnchor.y
       value: 0.43336496
       objectReference: {fileID: 0}
     - target: {fileID: 6109575673615269351, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_Distance
       value: 0.33275515
+      objectReference: {fileID: 0}
+    - target: {fileID: 6863325978655805348, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7221160077256846376, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2844,6 +2852,10 @@ PrefabInstance:
     - target: {fileID: 3691068480515618338, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_Name
       value: jointed (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_ConnectedAnchor.y
