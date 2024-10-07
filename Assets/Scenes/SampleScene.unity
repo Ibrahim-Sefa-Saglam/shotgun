@@ -1824,9 +1824,33 @@ PrefabInstance:
       propertyPath: m_Distance
       value: 0.31631237
       objectReference: {fileID: 0}
+    - target: {fileID: 3368028308484376547, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368028308484376547, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368028308484376547, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368028308484376547, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3368028308484376547, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3691068480515618338, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_Name
       value: jointed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
+      propertyPath: m_EnableCollision
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5567496221836173492, guid: 6003ad3965c8bb544bccf84e8e633128, type: 3}
       propertyPath: m_ConnectedAnchor.x
