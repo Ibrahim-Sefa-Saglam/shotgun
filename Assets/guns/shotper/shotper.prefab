@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6582659308426403451}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: 'bulletOrigin_1 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4017099771206913989}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bulletPoint_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 5332309206263990747}
   - component: {fileID: 8265632119922758515}
   - component: {fileID: 3562219907005724021}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: shotper
   m_TagString: gun
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ Transform:
   m_GameObject: {fileID: 2700460844092483441}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.63, y: -8.42, z: -0.080252394}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -289,8 +289,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4374671861581931355}
-  m_Layer: 8
-  m_Name: dierction
+  m_Layer: 7
+  m_Name: direction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7164379035343082237}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bulletPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238991999729604352}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bulletPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8515974097864464471}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bulletOrigin_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4139182853247556079}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bulletOrigin_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

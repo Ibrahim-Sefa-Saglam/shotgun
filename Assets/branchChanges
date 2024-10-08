@@ -1,0 +1,13 @@
+Branch Playable_0:
+
+Goal: Remove the Gun prefab from Player prefab. Make Player pick up gun
+
+Changes:
+
+- Change in gunMovement_Scr.cs: made it work with no gun. And now picks up guns and changes their layer to "eq_gun" | 1
+
+- Change in Playable prefab: playable gameObject component has a isTrigger box collider | 4
+
+- Change in all guns attribute: set every guns Layer to "gun" from "eq_gun" | 0 
+
+- Change in shotper prefab: corrected the name of direction gameObject component|0 
