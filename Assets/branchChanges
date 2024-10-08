@@ -8,6 +8,6 @@ Changes:
 
 - Change in Playable prefab: playable gameObject component has a isTrigger box collider | 4
 
-- Change in all guns attribute: set every guns Layer to "gun" from "eq_gun" | 0 
+- Change in all guns attribute: set every guns Layer to "gun" from "eq_gun" | 1
 
-- Change in shotper prefab: corrected the name of direction gameObject component|0 
+- Change in shotper prefab: corrected the name of direction gameObject component|1 
