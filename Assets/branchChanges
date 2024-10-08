@@ -1,6 +1,0 @@
-branch  npc_eqGun_0, commit 1:
-- change in playable structure: pointer axis is carried to beneath of playable, a container for whole body and gun is made  
-- change in gunPickupScript: name is changed to "gunMovemnt_Scr."
-- gunMovemnt_Scr content change: a logic for rotation of physical components depending on the pointers location is added
-- change in jointed variants prefab: has been deleted 
-
