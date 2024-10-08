@@ -12,3 +12,8 @@
 
 commit format:
 " code_(sum of points) : (description) " || " codeNum_(number of actions in order) : description "
+
+
+sprite rules:
+
+every sprite gun must look to lefts
