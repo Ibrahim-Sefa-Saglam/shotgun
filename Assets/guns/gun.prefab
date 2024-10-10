@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8940269021317755095}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: bullet_point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8215775359605616310}
   - component: {fileID: 7205918131346201647}
   - component: {fileID: 2875087554897673047}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: gun
   m_TagString: gun
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5402471734240093207}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: direction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
