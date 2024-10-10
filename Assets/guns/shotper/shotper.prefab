@@ -379,7 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780493226057171439}
   m_Layer: 7
-  m_Name: bullet3Aling
+  m_Name: bullet3Alingment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9211149185041512773}
   m_Layer: 7
-  m_Name: 'bullet2Aling '
+  m_Name: bullet2Alingment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,7 +507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5446843754172117950}
   m_Layer: 7
-  m_Name: bullet1Aling
+  m_Name: bullet1Alingment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
