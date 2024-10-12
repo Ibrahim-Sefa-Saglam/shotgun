@@ -60,3 +60,5 @@ public class Playable_move_scr : MonoBehaviour
 
     }
 }
+
+    

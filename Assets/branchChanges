@@ -4,7 +4,7 @@ Goal: Make jumping work porperly
 
 Changes: 
  
-- Changed the content of Playable_Move_scr | +2
+- Changed the content of Playable_Move_scr |code:2, +2
 
 - Added a  SteelBeam GameObject | code: 4, +16
 
