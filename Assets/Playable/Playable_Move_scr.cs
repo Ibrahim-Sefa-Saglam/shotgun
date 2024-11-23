@@ -22,6 +22,7 @@ public class Playable_move_scr : MonoBehaviour
         Movement();
     }
 
+
     void Movement()
     {
         // Horziontal movement
