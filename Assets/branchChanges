@@ -1,13 +1,1 @@
-Playable_1 branch changes
-
-Goal: Make jumping work porperly
-
-Changes: 
- 
-- Changed the content of Playable_Move_scr |code:2, +2
-
-- Added a  SteelBeam GameObject | code: 4, +16
-
-- Added a SteelBeam sprite to the General_Sprites folder | code: 5, +32 
-
-- Added a General_Phyisics folder and a General_Sprites folder | code: 6, +64
+insignificant branch changes: 
