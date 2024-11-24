@@ -1,2 +1,0 @@
-# shtgn
-casual project
