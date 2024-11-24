@@ -1,2 +1,2 @@
 # shtgn
-casual project
+casual hobby project
