@@ -188,6 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71d4d2bd132a6694c90f6becb1e1c8c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  TookDamageColor: {r: 1, g: 0.6156863, b: 0.6156863, a: 1}
 --- !u!114 &2539038086327849265
 MonoBehaviour:
   m_ObjectHideFlags: 0
