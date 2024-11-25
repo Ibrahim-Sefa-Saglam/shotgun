@@ -7,3 +7,9 @@ Branch changess:
 - Added following C# files: Enemy0_Move_scr, Enemy0_Attack_scr, Enemy0_TakeDmg_scr, Enemy0_Die_scr | 3,+8
 - Changed file "CommitCodes" name to -> "CommitRules" | 0,+1
 - Added following animations: Enemy0_Idle_anim, Enemy0_Attack_anim, Enemy0_Move_anim, Enemy0_TakeDmg_anim, Enemy0_Die_anim  | 2,+4
+
+To Be Completed:
+
+- Complete the enemy0's animation behavior for animations: Idle|done, Move|done , Attack|done, TakeDmg|x, Die|x
+- Create the enemy0's essential character attributes(life points, damage points)
+- Complete the enemy0's behavior for its mechanics: Move, Attack, TakeDmg, Die

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemy0_TakeDmg_scr : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator animator;
+
     void Start()
     {
         

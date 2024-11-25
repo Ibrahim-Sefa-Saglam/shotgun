@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Enemy0_Die_scr : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private Animator animator;
+
     void Start()
     {
-        
+        animator = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class Enemy0_Die_scr : MonoBehaviour
     void Die(bool keyInput)
     {        
         if(!keyInput)return;
-        Debug.Log("Died"+ Input.GetKeyDown(KeyCode.Space));        
+        Debug.Log("Died" );        
     }
 
 }

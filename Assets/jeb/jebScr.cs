@@ -72,7 +72,6 @@ public class jebScr : MonoBehaviour
                 // Change the gun's layer to "equipt"
                 gunAtHand.layer = LayerMask.NameToLayer("equipt");
 
-                Debug.Log("Picked up the gun and layer changed to 'equipt'!");
             }
         }
     }
