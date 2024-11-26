@@ -1,7 +1,7 @@
 public interface IDamageable
 {
-    public int Healt { get; set;}
-    public void TakeDamage();
-    public void Die(); 
+     int Health { get; set;}
+      void TakeDamage();
+     void Die(); 
 
 }

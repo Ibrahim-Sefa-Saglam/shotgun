@@ -69,7 +69,7 @@ public class Enemy0_Behavior_scr : MonoBehaviour
         ChangeAnimState(Attack_Anim);
         Invoke("ReturnToIdle", GetAnimationClipLength(Attack_Anim));
     }
-    void TakeDmg(bool keyInput)
+   public void TakeDmg(bool keyInput)
     {        
         if(!keyInput)return;
         ChangeAnimState(TakeDmg_Anim);
@@ -77,7 +77,7 @@ public class Enemy0_Behavior_scr : MonoBehaviour
         Invoke("ReturnToIdle", GetAnimationClipLength(TakeDmg_Anim));
 
     }
-   void Die(bool keyInput)
+   public void Die(bool keyInput)
     {        
         if(!keyInput)return;
         ChangeAnimState(Die_Anim);

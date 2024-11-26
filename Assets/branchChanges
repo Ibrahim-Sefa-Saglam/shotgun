@@ -2,6 +2,7 @@ branch goals: add "life/lifetime" mechanics to characters(enemy0 mainly)
 
 branch changes:
 
-- Location of Playable folder was changed, put under Character folder | 0, +1
+- Location of Playable folder was changed, put under Character folder, files related to move, attack, takedmg, die behaviors are moved to Suspended_Scripts_Enemy0 folder | 0, +1
 - Changed the content of Enemy0_Life_scr | 1, +2
 - Added Enemy0_Life_scr file, Enemy0_Behavior_scr file | 3,+8
+- Added "Suspended_Scripts_Enemy0" folder | 6,+64
