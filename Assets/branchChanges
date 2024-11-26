@@ -1,0 +1,5 @@
+branch goals: add "life/lifetime" mechanics to characters(enemy0 mainly) 
+
+branch changes:
+
+- Location of Playable folder was changed, put under Character folder | 0, +1
