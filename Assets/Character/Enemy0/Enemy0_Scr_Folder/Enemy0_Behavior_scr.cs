@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy0_Life : MonoBehaviour
+public class Enemy0_Behavior_scr : MonoBehaviour
 {
-    private Rigidbody2D rb;
+   private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     public Color TookDamageColor;
@@ -56,13 +56,12 @@ public class Enemy0_Life : MonoBehaviour
         else
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
-            ChangeAnimState(Idle_Anim);
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0); // 0 is the base layer index
+            if (stateInfo.normalizedTime >= 1f && stateInfo.IsName(currentState)) ChangeAnimState(Idle_Anim); // Execute only after the current animation finishes
             return;
         }
         // load Move animation 
         ChangeAnimState(Move_anim);
-        // return to Idle if no longer moving
-        Invoke("ReturnToIdleState", GetAnimationClipLength(Move_anim));
     }
     void Attack(bool keyInput)
     {        
@@ -90,7 +89,7 @@ public class Enemy0_Life : MonoBehaviour
 {
     // Guards the current animation from itself
     if (currentState == newState) return;
-    if (newState == Idle_Anim && (currentState == Move_anim || currentState == Attack_Anim || currentState == TakeDmg_Anim || currentState == Die_Anim)) return;
+    if (newState == Idle_Anim && (currentState == Attack_Anim || currentState == TakeDmg_Anim || currentState == Die_Anim)) return;
     if (newState == Move_anim && (currentState == Attack_Anim || currentState == TakeDmg_Anim || currentState == Die_Anim)) return;
     if (newState == Attack_Anim && (currentState == TakeDmg_Anim || currentState == Die_Anim)) return;
     if (newState == TakeDmg_Anim && currentState == Die_Anim) return;
@@ -114,10 +113,7 @@ public class Enemy0_Life : MonoBehaviour
     currentState = Idle_Anim;
     spriteRenderer.color = new Color(255f, 255f, 255f);
     animator.Play(Idle_Anim);
-    }
-    void ReturnToIdleState()
-    {
-    currentState = Idle_Anim;
+
     }
 
 }
