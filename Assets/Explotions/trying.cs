@@ -40,7 +40,6 @@ public class Trying : MonoBehaviour
             }
             else
             {
-                Debug.Log("no object found");
             }
         }
     }
