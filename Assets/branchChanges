@@ -1,1 +1,5 @@
-main
+branch goals: add character mechanics as follows, adding spritebones, damage recognition
+
+branch changes:
+- Added "dude0" and "DudeEq" game objects (characters) |  4, +16
+- Added "TheDude folder" | 6,+64  
