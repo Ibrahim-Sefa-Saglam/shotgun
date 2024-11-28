@@ -105,7 +105,6 @@ public class Enemy0_Behavior_scr : MonoBehaviour
         if (clip.name == clipName)
             return clip.length;
     }
-    Debug.LogWarning($"Animation clip {clipName} not found!");
     return 0f;
     }
     void ReturnToIdle()
