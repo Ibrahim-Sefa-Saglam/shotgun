@@ -58,7 +58,7 @@ public class jebScr : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the collided object has the tag "gun"
-        if (collision.gameObject.CompareTag("gun"))
+        if (collision.gameObject.CompareTag("gunLayer"))
         {
             // Check if the player is not already holding a gun
             if (gunAtHand == null)

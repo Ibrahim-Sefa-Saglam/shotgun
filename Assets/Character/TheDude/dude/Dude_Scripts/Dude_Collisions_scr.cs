@@ -18,7 +18,7 @@ public class Dude_Collisions_scr : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collider)
     {
     
-    if (collider.gameObject.CompareTag("gun"))
+    if (collider.gameObject.CompareTag("gunLayer"))
     {   
         dude_Gun_Handler.PickUpGun(collider.gameObject);
     }

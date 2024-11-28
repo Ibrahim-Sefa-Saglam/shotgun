@@ -6,6 +6,7 @@ public class Enemy0_Life : MonoBehaviour, IDamageable
 {
     public int Health { get; set; }
     public Enemy0_Behavior_scr enemy0_Behavior;
+    public int testingDamage = 10;
 
 
     void Start()
@@ -23,7 +24,7 @@ public class Enemy0_Life : MonoBehaviour, IDamageable
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("bullet")) {
-            TakeDamage(10);  
+            TakeDamage(testingDamage);  
             Destroy(collision.gameObject);
         } 
     }

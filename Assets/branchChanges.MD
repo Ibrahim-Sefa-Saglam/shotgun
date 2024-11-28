@@ -1,8 +1,12 @@
-branch goals: add character mechanics as follows, adding spritebones, damage recognition
+branch goals: add a gun objcet compatable for character use
 
 branch changes:
-- Moved all objects and their related folders into related category folders, ex: _man,jeb -> Character; Removed unnecessary log()s | 0,+1
-- Added following scripts: "Dude_Gun_Handler_scr", "Dude_Collisions_scr", "Dude_Move_scr",  | 3,+8
-- Added "dude0" and "DudeEq" game objects (characters) |  4, +16
-- Added new sprite for the "gun" object | 5,+32
-- Added following folders: "TheDude", "Dude Sprites", "DudeEq" | 6,+64
+
+- Added following scripts: Long_Gun_scr , Gun_Class | 3,+8 
+- Added "LongGun" gameobject | 4,+16
+- Added assests related to "LongGun" object | 5,+32
+- Added "LongGun" folder | 6,+64
+
+To Do:
+- Test "holdPoints" of LongGun for "holding" feature
+- Fix all current guns to be a child of the "Gun" class object in "Gun_Class" file

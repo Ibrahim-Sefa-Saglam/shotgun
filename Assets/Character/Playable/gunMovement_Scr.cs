@@ -83,7 +83,7 @@ public class gunMovement_Scr : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the object the player collided with has the tag "gun"
-        if (other.CompareTag("gun"))
+        if (other.CompareTag("gunLayer"))
         {
             // Check if gunObject is null before assigning
             if (gunObject == null)
