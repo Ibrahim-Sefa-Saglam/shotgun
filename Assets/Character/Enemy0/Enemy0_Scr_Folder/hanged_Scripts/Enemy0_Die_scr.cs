@@ -24,7 +24,6 @@ public class Enemy0_Die_scr : MonoBehaviour
     {        
         if(!keyInput)return;
         ChangeAnimState(Die_Anim);
-        Debug.Log( GetAnimationClipLength(Die_Anim));
         Destroy(gameObject, GetAnimationClipLength(Die_Anim));        
     }
     void ChangeAnimState(string newState){
@@ -42,7 +41,6 @@ public class Enemy0_Die_scr : MonoBehaviour
         if (clip.name == clipName)
             return clip.length;
     }
-    Debug.LogWarning($"Animation clip {clipName} not found!");
     return 0f;
 }
 }

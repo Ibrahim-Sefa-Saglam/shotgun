@@ -27,7 +27,6 @@ public class Enemy0_TakeDmg_scr : MonoBehaviour
     {        
         if(!keyInput)return;
         ChangeAnimState(TakeDmg_Anim);
-        Debug.Log( GetAnimationClipLength(TakeDmg_Anim));
         if(TookDamageColor != null)spriteRenderer.color = TookDamageColor;
         Invoke("On_TakeDmg_Animation_Complete", GetAnimationClipLength(TakeDmg_Anim));
 
@@ -54,7 +53,6 @@ public class Enemy0_TakeDmg_scr : MonoBehaviour
         if (clip.name == clipName)
             return clip.length;
     }
-    Debug.LogWarning($"Animation clip {clipName} not found!");
     return 0f;
 }
 }

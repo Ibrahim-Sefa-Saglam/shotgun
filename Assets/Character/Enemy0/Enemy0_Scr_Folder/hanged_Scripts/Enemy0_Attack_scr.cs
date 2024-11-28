@@ -24,7 +24,6 @@ public class Enemy_Attack_scr : MonoBehaviour
             return;
         }
         ChangeAnimState(Attack_Anim);
-        Debug.Log( GetAnimationClipLength(Attack_Anim));
         Invoke("OnAttackAnimationComplete", GetAnimationClipLength(Attack_Anim));
 
     }
@@ -50,7 +49,6 @@ public class Enemy_Attack_scr : MonoBehaviour
         if (clip.name == clipName)
             return clip.length;
     }
-    Debug.LogWarning($"Animation clip {clipName} not found!");
     return 0f;
 }
 }
