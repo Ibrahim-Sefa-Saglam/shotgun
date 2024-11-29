@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1255876903709574563}
   - component: {fileID: 8642108630918349809}
   - component: {fileID: 8121773665105252501}
+  - component: {fileID: -2908681874235409090}
   m_Layer: 7
   m_Name: longGun_0
   m_TagString: gun
@@ -226,6 +227,27 @@ MonoBehaviour:
   bulletSpeed: 20
   spreadAngle: 10
   bulletCount: 10
+  holdDistance: 0
+--- !u!114 &-2908681874235409090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2872581324087544935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0042638535c6c48b2a35bd97b0ef80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdPoints:
+  - {fileID: 8209231134512409732}
+  - {fileID: 4052222929274055364}
+  bulletPoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  bulletSpeed: 0
+  spreadAngle: 0
+  bulletCount: 0
   holdDistance: 0
 --- !u!1 &4052222929274055364
 GameObject:

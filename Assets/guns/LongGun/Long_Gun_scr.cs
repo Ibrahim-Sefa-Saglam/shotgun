@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Long_Gun_scr : Gun
 {
-    
-
     void Start()
     {
     if(bulletSpeed == 0)bulletSpeed = 15;
@@ -13,13 +11,10 @@ public class Long_Gun_scr : Gun
     if(spreadAngle == 0f)spreadAngle = 10;       
     }
 
-    // Update is called once per frame
     void Update()
     {
-          if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
-        }
+        InfoUpdate(); // update the guns attribute informations in the Gun_Info file
+        if (Input.GetMouseButtonDown(0))Shoot();
     }
  public override void Shoot()
     {
@@ -52,6 +47,5 @@ public class Long_Gun_scr : Gun
         }
     }
  public override void Reload(){return;}
-
 }
 
