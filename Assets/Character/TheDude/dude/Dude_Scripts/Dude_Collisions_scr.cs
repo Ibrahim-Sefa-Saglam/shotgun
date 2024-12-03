@@ -23,5 +23,4 @@ public class Dude_Collisions_scr : MonoBehaviour
         dude_Gun_Handler.PickUpGun(collider.gameObject);
     }
     }
-
 }
