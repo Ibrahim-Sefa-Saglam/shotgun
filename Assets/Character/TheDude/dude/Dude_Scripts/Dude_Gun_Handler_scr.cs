@@ -8,6 +8,12 @@ public class Dude_gun_handler : MonoBehaviour
     public GameObject physicalContent;
     public GameObject gun;
     public GameObject rightHand;
+    public GameObject rightShoulder;
+    public GameObject rightArm;
+    public GameObject elbow; // ********* TEMP: REMOVE AFTER TESTING
+    public GameObject shoulderPivot; // ********* TEMP: REMOVE AFTER TESTING
+    public HingeJoint2D rigthHandJoint;
+    public HingeJoint2D leftHandJoint;
     public float yOffSet;
     void Start() {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -19,7 +25,6 @@ public class Dude_gun_handler : MonoBehaviour
         AlingPhysicalContent();
         if(gun!=null){
         AlingGun();
-        Holding();
         }
     }
     // update the locaiton of the PointerAxis(objcet this script assinged to) to stay in desired location
@@ -80,9 +85,8 @@ public class Dude_gun_handler : MonoBehaviour
         gun = pickedGun;
     }
     // put the players/characters hands(rightHand/leftHand) on the guns holdPoints
-    void Holding()
-    {
-        if (gun == null || rightHand == null){ 
+    void Holding(){
+        if (gun == null ){ 
             Debug.Log(1+"   gun: "+(gun == null)+"  rightHand: "+(rightHand == null));
             return;
         }
@@ -98,6 +102,100 @@ public class Dude_gun_handler : MonoBehaviour
         }
 
         // Set the rightHand position to the first HoldingPoint
-        rightHand.transform.position = gunInfo.holdPoints[0].transform.position;
+        rightArm.transform.position = gunInfo.holdPoints[0].transform.position;
+                
+        if(rightShoulder != null){
+        }
+        if(rightArm != null){ 
+        }
     }    
+    
+    
+    /*
+    // get where elbow should be 
+    public Vector3 GetElbowPoint(GameObject shoulder, GameObject arm, GameObject shoulderPivot, GameObject gun)
+    {
+        Gun_Info gunInfo = gun.GetComponent<Gun_Info>();
+        if (gunInfo == null || gunInfo.holdPoints == null)
+        {
+            Debug.LogError("Gun_Info component or holdPoint is missing on the gun.");
+            return shoulderPivot.transform.position;
+        }
+
+        Vector3 shoulderPos = shoulderPivot.transform.position;
+        Vector3 holdPointPos = gunInfo.holdPoints[0].transform.position;
+
+        // Calculate distance between shoulder and holdPoint
+        float d = Vector3.Distance(shoulderPos, holdPointPos);
+
+        // Get the length of the shoulder (distance to forearm or default length)
+        SpriteRenderer shoulderRenderer = shoulder.GetComponent<SpriteRenderer>();
+        float shoulderLength = shoulderRenderer.sprite.bounds.size.y;
+        SpriteRenderer armRenderer = arm.GetComponent<SpriteRenderer>();
+        float armLength = armRenderer.sprite.bounds.size.y;
+
+        // a = [(shoulderLength)^2 - (armRenderer)^2 + d^2] /2d
+        float A = ((shoulderLength * shoulderLength) - (armLength * armLength) + (d * d)) / (2 * d);
+        // Calculate the radius r
+        float rSquared = (shoulderLength * shoulderLength) - (A* A);
+        if (rSquared < 0) rSquared = -rSquared;
+        float r = Mathf.Sqrt(rSquared) + 5f;
+
+    
+
+        // Calculate the midpoint (direction of d/2)
+        Vector3 direction = (holdPointPos - shoulderPos).normalized;
+        Vector3 midPoint = shoulderPos + direction * A;
+
+        // Calculate the perpendicular direction
+        Vector3 perpendicular = Vector3.Cross(direction, Vector3.up).normalized * r;
+
+        // Final elbow position (M = midPoint + perpendicular)
+        Vector3 elbowPos = midPoint + perpendicular;           
+        Debug.Log(shoulderLength);
+        return elbowPos; 
+
+    }
+    public void AlingArms(GameObject shoulderPivot, GameObject shoulder, GameObject elbow, GameObject arm, GameObject gun)
+{
+    // Get the elbow position based on the calculated point
+    elbow.transform.position = GetElbowPoint(shoulder,arm, shoulderPivot, gun);
+
+    // Ensure the gun has the Gun_Info component and retrieve holdPoint
+    Gun_Info gunInfo = gun.GetComponent<Gun_Info>();
+    if (gunInfo == null || gunInfo.holdPoints == null || gunInfo.holdPoints.Length == 0)
+    {
+        Debug.LogError("Gun_Info or holdPoints missing on the gun.");
+        return;
+    }
+
+    Vector3 holdPointPos = gunInfo.holdPoints[0].transform.position;
+
+    // Calculate shoulderPlace: midpoint between shoulderPivot and elbow
+    Vector3 shoulderPlace = (shoulderPivot.transform.position + elbow.transform.position) / 2;
+
+    // Calculate armPlace: midpoint between holdPointPos and elbow
+    Vector3 armPlace = (holdPointPos + elbow.transform.position) / 2;
+
+    // Place the shoulder at shoulderPlace
+    shoulder.transform.position = shoulderPlace;
+
+    // Place the arm at armPlace
+    arm.transform.position = armPlace;
+
+    
+    // Align the shoulder to point from shoulderPivot to elbow along the Z-axis
+    Vector3 shoulderDirection = elbow.transform.position - shoulderPivot.transform.position;
+    float shoulderAngle = Mathf.Atan2(shoulderDirection.y, shoulderDirection.x) * Mathf.Rad2Deg;
+    shoulder.transform.rotation = Quaternion.Euler(0, 0, shoulderAngle+90);
+
+    // Align the arm to point from elbow to holdPointPos along the Z-axis
+    Vector3 armDirection = holdPointPos - elbow.transform.position;
+    float armAngle = Mathf.Atan2(armDirection.y, armDirection.x) * Mathf.Rad2Deg;
+    arm.transform.rotation = Quaternion.Euler(0, 0, armAngle+90);
+    
+    Debug.Log("Arms aligned successfully with Z-axis rotations.");
+    
+}
+    */
 }
